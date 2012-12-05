@@ -1,0 +1,12 @@
+.my-control {
+    -fx-skin: "mycontrol.MyControlSkin";
+    -fx-my-control-color: rgba(227, 0, 74, 1.0);   
+}
+
+.my-control .rect {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%,
+                              derive(-fx-my-control-color, 25%) 0%,
+                              -fx-my-control-color 50%,
+                              derive(-fx-my-control-color, 100%));
+    -fx-stroke: derive(-fx-my-control-color, -75%);
+}
